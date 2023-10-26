@@ -1,0 +1,448 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #0e0837;
+}
+.main-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+.text-part,
+.img-part {
+  width: 45%;
+  height: 80vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.4;
+  font-weight: 300;
+}
+.main-container .main-para {
+  color: white;
+}
+.main-hd,
+.tours-hd,
+.about-hd,
+.availability-hd3,
+.live-hd {
+  color: #d61361;
+  font-size: 1.5rem;
+}
+
+.sub-hd {
+  font-size: 3rem;
+  background: url(https://www.thisiscolossal.com/wp-content/uploads/2014/03/120430.gif);
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  -webkit-background-clip: text;
+}
+
+.availability {
+  color: #d61361;
+  padding-block: 1rem;
+  margin-bottom: 1rem;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.fa-brands,
+.fa-music,
+.fa-radio,
+.bi {
+  color: white;
+}
+
+.main-container button {
+  color: white;
+  font-size: 1rem;
+  background-color: #0567f3;
+  border: none;
+  padding: 1rem 1.4rem;
+  margin-top: 1.7rem;
+}
+
+.main-hd {
+  font-size: 1.75rem;
+}
+.img-part img {
+  scale: 1.4;
+}
+/* tour and events section begins here */
+.tours-events {
+  width: 90%;
+  margin: auto;
+  margin-block: 2rem;
+  position: relative;
+}
+.events-cards {
+  display: flex;
+  gap: 2rem;
+  background-color: #100726;
+  padding: 3rem 1rem;
+}
+.tours-hd {
+  margin-top: 15rem;
+  margin-bottom: 2rem;
+}
+
+.events-cards,
+.events-cards button {
+  color: white;
+}
+.events-cards h4 {
+  margin-bottom: 0.5rem;
+}
+.events-cards p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.events-cards button {
+  font-size: 1rem;
+  background-color: #dc3545;
+  border: none;
+  padding: 8px 12px;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.img-card {
+  color: white;
+  width: 376px;
+  vertical-align: middle;
+  background: linear-gradient(
+    135deg,
+    rgb(254, 205, 165) 0%,
+    rgb(254, 45, 45) 50%,
+    rgb(107, 0, 62) 100%
+  );
+  padding: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: -10rem;
+}
+.img-card p {
+  font-size: 1rem;
+}
+.dj,
+.img-card-text {
+  transition: all 1s;
+}
+.img-card:hover .dj {
+  border-radius: 50%;
+  transform: translateX(150px) translateY(-150px);
+}
+.img-card:hover .img-card-text {
+  transform: translateY(-100px);
+}
+
+/* video section begins here */
+.video-section {
+  text-align: center;
+  align-items: center;
+  color: #d61361;
+  margin-block: 4rem;
+  padding-block: 2rem;
+}
+
+.video-section h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.7rem;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 6rem;
+  align-items: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  background: #0e0837;
+  color: white;
+}
+.about {
+  width: 450px;
+}
+.about-subhd {
+  font-size: 2.5rem;
+}
+
+.track-list-section {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 7)),
+    url(./assets/instrument.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  padding: 2rem;
+}
+.track-content {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.track-list-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.track-list-cont h4 {
+  color: #d61361;
+  font-size: 1.5rem;
+}
+.track-list {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+.track {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  background: linear-gradient(45deg, rgb(70, 12, 58), #0e0829, #2b0f47);
+  padding: 2rem;
+  transition: all 0.8s;
+}
+.track:hover {
+  opacity: 0.8;
+  scale: 1.2;
+  background: linear-gradient(-45deg, #460c3a, #0e0829, #2b0f47);
+}
+.track-card {
+  width: 35%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: left;
+  background: linear-gradient(-45deg, #460c3a, #0e0829, #2b0f47);
+  padding: 1rem 3rem;
+}
+
+.availability-hd3,
+.new-release-hd,
+.journey-main-hd {
+  margin-bottom: 0.5rem;
+}
+.track-card-para {
+  margin-bottom: 1rem;
+}
+.new-release-hd,
+.detail-album-hd {
+  font-size: 1.5rem;
+}
+.journey-main-hd {
+  font-size: 2.5rem;
+}
+.artist-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.artist-icon {
+  width: max-content;
+  height: max-content;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #0567f3;
+}
+.bi-mic-fil {
+  color: white;
+  font-size: 1rem;
+}
+.journey-icons {
+  width: max-content;
+  display: flex;
+  gap: 2rem !important;
+  margin-bottom: 1rem;
+}
+/* live section */
+.live-section {
+  background: #0e0727;
+}
+.live-hd,
+.live-subhd {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.live-subhd {
+  color: white;
+  font-size: 2.5rem;
+}
+.event-details {
+  background: linear-gradient(-45deg, #460c3a, #0e0829, #2b0f47);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.d-t-up-icon,
+.d-t-down-icon {
+  color: white;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.pink-icon {
+  background-color: #aa1072;
+  padding: 1rem;
+}
+
+.destination button {
+  display: block;
+  margin-left: 10rem;
+}
+.event-details:hover {
+  background: linear-gradient(45deg, #460c3a, #0e0829, #2b0f47);
+}
+.destination h4 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.destination button {
+  background-color: #198754;
+  border: none;
+  padding: 0.7rem 0.7rem;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+/* responsiveness begins here */
+
+@media only screen and (max-width: 600px) {
+  .main-container {
+    width: 100%;
+    position: relative;
+    top: 10rem;
+  }
+
+  .text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .img-part img {
+    width: 80%;
+    position: absolute;
+    z-index: -1;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  .img-part img {
+    vertical-align: middle;
+  }
+
+  .text-part,
+  .img-part {
+    width: 100%;
+    height: 100%;
+  }
+  .img-part {
+    position: absolute;
+  }
+
+  .events-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .tours-events {
+    padding-top: 0.5rem;
+  }
+
+  .img-card:hover .dj {
+    border-radius: 1px;
+    transform: none;
+  }
+  .img-card:hover .img-card-text {
+    transform: none;
+  }
+  .img-card {
+    top: 800px;
+    left: 0rem;
+  }
+  .video-section {
+    width: 100%;
+    padding-top: 25rem;
+  }
+  .video-section img {
+    width: 320px;
+    vertical-align: middle;
+    margin-inline: 2rem;
+  }
+
+  .about-us {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+  }
+  .about-us h1 {
+    text-align: center;
+    align-items: center;
+    padding-left: 2rem;
+    font-size: 2rem;
+  }
+  .about-us p {
+    padding-inline: 3rem;
+    margin-left: 2rem;
+  }
+  .about-us h1,
+  h3 {
+    text-align: center;
+    align-items: center;
+  }
+
+  .track-content,
+  .track-card {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .track-card,
+  .track-list .live-section,
+  .track-list-cont {
+    width: 100%;
+  }
+}
